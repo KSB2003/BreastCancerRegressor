@@ -486,7 +486,7 @@ class GUI():
 
 
 
-def runner():
+def runner1():
     refData = DataPre('csIA.csv')
     refData.datareader()
     xtrain, xtest, ytrain, ytest = refData.splitterandmodify()
@@ -499,7 +499,7 @@ def runner():
     # print(confusion_matrix(ytest, ypredicted))
     GUI(['radius_se', 'texture_worst', 'compactness_se', 'radius_worst', 'concavity_worst'], regress.classer, scale)
 
-runner()
+runner1()
 
 #17.99	10.38	122.8	1001	0.1184	0.2776	0.3001	0.1471	0.2419	0.0787	1.095	0.9053	8.589	153.4	0.0064	0.049	0.0537	0.0159	0.03	0.0062	25.38	17.33	184.6	2019	0.1622	0.6656	0.7119	0.2654	0.4601	0.1189
 
